@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Birdwatching Helsinki</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="birdwatching-helsinki.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-animate-top w3-white" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-deep-orange w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html#home" class="w3-bar-item w3-button w3-hover-deep-orange"><i class="fa fa-binoculars"></i> TOURS</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-deep-orange w3-hover-deep-orange"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="testimonials.html" class="w3-bar-item w3-button w3-hide-small w3-hover-deep-orange"><i class="fa fa-smile-o"></i> TESTIMONIALS</a>
+    <a href="trip-reports.html" class="w3-bar-item w3-button w3-hide-small w3-hover-deep-orange"><i class="fa fa-pencil-square-o"></i> TRIP REPORTS</a>
+    <a href="suomeksi.html" class="w3-bar-item w3-button w3-hide-small w3-hover-deep-orange"><i class="fa fa-language"></i> SUOMEKSI</a>
+    <a href="index.html#contact_form" class="w3-bar-item w3-button w3-hover-deep-orange w3-right"><i class="fa fa-envelope"></i> CONTACT</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-smile-o"></i> TESTIMONIALS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-pencil-square-o"></i> TRIP REPORTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-language"></i> SUOMEKSI</a>
+  </div>
+</div>
+
+<div class="w3-content w3-container me-padding-32" id="tours-1">
+  <h1 class="w3-center">ABOUT</h1>
+  <p class="w3-center">Coming soon</p>
+  <p class="w3-center">Easily accessible from the heart of the city, the best local nature reserves have a lot to offer to the keen birder. Woods, reedbeds, fields and mudflats form a myriad of microhabitats that host countless birds. From the rare Citrine Wagtail to the majestic White-tailed Eagle, from the endearing Horned Grebe to the hectic Common Rosefinch, there are wonders waiting to be discovered!</p>
+  <p class="w3-center">The main hotspots are Vanhakaupunki, Laajalahti and Suomenoja. They all have their own specificities, but one thing for sure is that they have birds, and they are easy to explore through paths, boardwalks and birdwatching towers.</p>
+
+  <h3 class="w3-center">Why me</h3>
+  <p class="w3-center">I am a professional guide, I have experience with international customers, and I love birding around Helsinki. In the field, I am known for my relaxed but dedicated attitude. I find joy in helping people and sharing my enthusiasm for the natural world, therefore I make sure to involve everyone so you can make the most of your time outdoors.<br>
+  I provide a birding scope for our outing, and of course I bring all my experience and motivation!</p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-deep-orange w3-padding-64">
+  <a href="#home" class="w3-button w3-white w3-hover-black"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-envelope-o w3-hover-opacity"></i>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+  </div>
+  <p>© Samuel Bloch<br>All pictures are mine. Do not use without authorization.</p>
+</footer>
+ 
+<script>
+// open Single Modal
+function openSingleModal(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// open Modal Slideshow
+function openModalSlideshow() {
+  document.getElementById("modal-slideshow").style.display = "block";
+}
+
+// Close Modal Slideshow
+function closeModalSlideshow() {
+  document.getElementById("modal-slideshow").style.display = "none";
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("my-slides");
+  let dots = document.getElementsByClassName("gallery-thumbnail");
+  let captionText = document.getElementById("modal-slideshow-caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+// Get the modal
+var modal = document.getElementById('modal-slideshow');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+/*
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top", "");
+    }
+}
+*/
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Add alt text after each .img
+  // 1. For all items with class .img...
+  // 2. Run a function for each of them...
+  // 3. To add a p element after it
+  // 5. Containing that element's alt text
+  $(".gallery-thumbnail").each(function() {
+    $(this).after('<p class="alt">' + $(this).attr('alt') + '</p>');
+  })
+
+// CSS shows/hides the alt text on hover
+
+</script>
+
+</body>
+</html>

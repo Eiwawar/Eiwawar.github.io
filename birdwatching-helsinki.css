@@ -1,0 +1,243 @@
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Quattrocento Sans", sans-serif;
+}
+body, html {
+  height: 100%;
+  color: #3E3E3E;
+  line-height: 1.5em;
+  font-size: 16px;
+}
+h1 {
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+h2 {
+  padding-bottom: 15px;
+}
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.me-padding-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.me-padding-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Page title over redshank image */
+/* WIDE SCREEN */
+@media (min-width:1400px){
+  .page-title {
+    top:20%;
+    white-space: nowrap;
+  }
+  .birdwatching-title {
+    font-size: 80pt;
+    height: 155%;
+    letter-spacing: 5px;
+    padding: 30px 24px;
+    line-height: 110%;
+  }
+  .best-of-birding-title {
+    font-size: 25pt;
+    letter-spacing: 5px;
+  }
+}
+
+/* MEDIUM-BIG SCREEN */
+@media (min-width:900px) and (max-width:1399px){
+  .page-title {
+    top:10%;
+  }
+  .birdwatching-title {
+    font-size: 80pt;
+    height: 155%;
+    letter-spacing: 5px;
+    padding: 30px 24px 0px;
+    line-height: 110%;
+  }
+  .best-of-birding-title {
+    font-size: 25pt;
+    letter-spacing: 5px;
+  }
+}
+
+/* MEDIUM-SMALL SCREEN */
+@media (min-width:500px) and (max-width:899px){
+  .page-title {
+    top:15%;
+  }
+  .birdwatching-title {
+    font-size: calc(1rem + 8vw);
+    height: 155%;
+    letter-spacing: 5px;
+    padding: 30px 24px 0px;
+    line-height: 110%;
+  }
+  .best-of-birding-title {
+    font-size: 25pt;
+    letter-spacing: 5px;
+    line-height: 120%;
+  }
+}
+
+/* NARROW SCREEN */
+@media (max-width:499px){
+  .page-title {
+    top:20%;
+  }
+  .birdwatching-title {
+    font-size: 9vw;
+    height: 155%;
+    letter-spacing: 5px;
+    padding: 30px 24px 0px;
+    line-height: 110%;
+  }
+  .best-of-birding-title {
+    font-size: 6vw;
+    letter-spacing: 5px;
+    line-height: 120%;
+  }
+}
+
+/* Hide menu items on small screens */
+@media (max-width:775px) {
+  .me-hide-bar {
+    {display:none!important}
+  }
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('images/header-laajalahti-19-denoise.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("images/birding-32.jpg");
+  min-height: 400px;
+  opacity: 0.9;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("images/birding-32.jpg");
+  min-height: 400px;
+}
+
+.inline-gallery-caption {
+  font-size: 14px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+/* Modal-slideshow styling */
+.* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.modal-slideshow-container .gallery-slideshow {
+  position: relative;
+}
+
+.modal-slideshow {
+  padding-top: 164px;
+}
+
+/* Hide the images by default */
+.my-slides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.gallery-caption-container {
+  padding: 0px 24px;
+}
+
+.w3-col {
+  position: relative;
+}
+
+.w3-col p.alt {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 15px 0px;
+  margin: 0px 8px;
+  line-height: 22px;
+  opacity: 0;
+  color: white;
+  transition: all 300ms ease;
+  cursor: pointer;
+  pointer-events: none;
+  }
+
+.w3-col:hover > p.alt {
+  opacity: 1;
+}
+
+.w3-col:hover > .gallery-thumbnail {
+  filter: brightness(80%);
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.w3-row-padding>.w3-col {
+  padding:0 5px
+}
