@@ -10,6 +10,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="birdwatching-helsinki.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style type="text/css">
+.w3-row-padding>.w3-col {
+  padding:10px 10px
+}
+.about {
+  margin: 0px;
+  padding-left: 20px;
+  text-align: left;
+}
+</style>
 </head>
 <body>
 
@@ -24,7 +34,7 @@
     <a href="testimonials.html" class="w3-bar-item w3-button w3-hide-small w3-hover-deep-orange"><i class="fa fa-smile-o"></i> TESTIMONIALS</a>
     <a href="trip-reports.html" class="w3-bar-item w3-button w3-hide-small w3-hover-deep-orange"><i class="fa fa-pencil-square-o"></i> TRIP REPORTS</a>
     <a href="suomeksi.html" class="w3-bar-item w3-button w3-hide-small w3-hover-deep-orange"><i class="fa fa-language"></i> SUOMEKSI</a>
-    <a href="index.html#contact_form" class="w3-bar-item w3-button w3-hover-deep-orange w3-right"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="index.html#contact_form" class="w3-bar-item w3-button w3-hover-deep-orange"><i class="fa fa-envelope"></i> CONTACT</a>
     </a>
   </div>
 
@@ -38,14 +48,51 @@
 
 <div class="w3-content w3-container me-padding-32" id="tours-1">
   <h1 class="w3-center" id="home">ABOUT</h1>
-  <p class="w3-center">Coming soon</p>
-  <p class="w3-center">Easily accessible from the heart of the city, the best local nature reserves have a lot to offer to the keen birder. Woods, reedbeds, fields and mudflats form a myriad of microhabitats that host countless birds. From the rare Citrine Wagtail to the majestic White-tailed Eagle, from the endearing Horned Grebe to the hectic Common Rosefinch, there are wonders waiting to be discovered!</p>
-  <p class="w3-center">The main hotspots are Vanhakaupunki, Laajalahti and Suomenoja. They all have their own specificities, but one thing for sure is that they have birds, and they are easy to explore through paths, boardwalks and birdwatching towers.</p>
-
-  <h3 class="w3-center">Why me</h3>
-  <p class="w3-center">I am a professional guide, I have experience with international customers, and I love birding around Helsinki. In the field, I am known for my relaxed but dedicated attitude. I find joy in helping people and sharing my enthusiasm for the natural world, therefore I make sure to involve everyone so you can make the most of your time outdoors.<br>
-  I provide a birding scope for our outing, and of course I bring all my experience and motivation!</p>
 </div>
+
+
+<div class="w3-content w3-container me-padding-32">
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m4">
+      <img src="images/suomenlinna-circle.png" style="width:100%"alt="Samuel Bloch birding in Helsinki">
+    </div>
+    <div class="w3-col m8">
+      <p class="about">
+        Hi, I'm Samuel Bloch, I'm a professional guide and I love Finnish nature!<br>
+        I've been passionate about wild animals, and birds in particular, since I was a kid.<br>
+        <br>
+        I come from the French Alps. I arrived in Finland as a student, and found a haven of peace that I always return to, no matter where my adventures take me. In Helsinki, we're very lucky to have spectacular natural places within easy reach, and I'm delighted to show them to you.<br>
+        <br>
+        In the field, I am known for my relaxed but dedicated attitude. I find joy in sharing my knwoledge and enthusiasm for the natural world. I adapt to your level of experience, whether you're a novice or an experienced birder, and make sure we have a enriching time together.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-content w3-container me-padding-32" id="contact_form">
+  <h2 class="w3-center">CONTACT ME</h2>
+    <form action="https://formspree.io/f/xzbnrlkn" method="POST">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <label for="name"><b>Name </b></label><span class="form-required">*</span><br>
+            <input class="w3-input w3-border" type="text" id="name" required name="name">
+          </div>
+          <div class="w3-half">
+            <label for="email"><b>Email </b></label><span class="form-required">*</span><br>
+            <input class="w3-input w3-border" type="email" id="email" required name="email">
+          </div>
+        </div>
+        <label for="message"><b>Tell me more </b><span class="form-required">*</span><br>
+        <textarea class="w3-input w3-border" type="textarea" id="message" rows="4" required style="resize:vertical" name="message"></textarea>
+        <div class="w3-center">
+          <button class="w3-button w3-black w3-section w3-hover-deep-orange" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND
+          </button>
+      </div>
+      </form>
+</div>
+
 
 <!-- Footer -->
 <footer class="w3-center w3-deep-orange w3-padding-64">
