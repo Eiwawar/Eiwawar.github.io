@@ -30,6 +30,12 @@ h3 {
 .w3-modal-content {
   height: 700px;
 }
+.orange-link {
+  text-decoration: none;
+}
+.orange-link:hover {
+  text-decoration: underline;
+}
 
 /* Page title over redshank image */
 /* WIDE SCREEN */
@@ -138,8 +144,9 @@ h3 {
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("images/birding-32.jpg");
+  background-image: url("images/birding-22.jpg");
   min-height: 400px;
+  opacity: 0.9;
 }
 
 .inline-gallery-caption {
@@ -155,7 +162,7 @@ h3 {
 #extra-details-left p, #extra-details-right p {
   margin-top: 0px;
 }
-#accessibility {
+#payment {
   padding-top: 0px;
 }
 
@@ -249,6 +256,12 @@ h3 {
 }
 
 .w3-col:hover > .gallery-thumbnail {
+  filter: brightness(80%);
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.inline-thumbnail:hover {
   filter: brightness(80%);
   transition: all 300ms ease;
   cursor: pointer;
