@@ -24,7 +24,7 @@
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<nav class="w3-top">
   <div class="w3-bar w3-card w3-animate-top w3-white" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-deep-orange w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
@@ -39,18 +39,18 @@
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-smile-o"></i> TESTIMONIALS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-pencil-square-o"></i> TRIP REPORTS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-language"></i> SUOMEKSI</a>
+    <a href="testimonials.html" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-smile-o"></i> TESTIMONIALS</a>
+    <a href="trip-reports.html" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-pencil-square-o"></i> TRIP REPORTS</a>
+    <a href="suomeksi.html" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-language"></i> SUOMEKSI</a>
   </div>
-</div>
+</nav>
 
 <div class="w3-content w3-container me-padding-32" id="tours-1">
   <h1 class="w3-center" id="home">ABOUT</h1>
 </div>
 
 
-<div class="w3-content w3-container me-padding-32">
+<main class="w3-content w3-container me-padding-32">
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m4">
@@ -67,9 +67,9 @@
       </p>
     </div>
   </div>
-</div>
+</main>
 
-<div class="w3-content w3-container me-padding-32">
+<aside class="w3-content w3-container me-padding-32">
   <p class="w3-center">
     Besides birding and guiding, I'm a story-driven wildlife and conservation photographer.<br>
     The stories I tell have people and wildlife as subjects. Through them, I want to nurture understanding, empathy and care for the natural world, for I firmly believe all things have the right to grow.
@@ -77,9 +77,9 @@
   <p class="w3-center" id="contact-form-anchor">
     You can discover my photographic work on my website, <a href="https://www.samuelbloch.fr/" target="_blank" class="w3-text-deep-orange orange-link">samuelbloch.fr</a>
   </p>
-</div>
+</aside>
 
-<div class="w3-content w3-container me-padding-32" id="contact_form">
+<section class="w3-content w3-container me-padding-32" id="contact_form">
   <h2 class="w3-center">CONTACT ME</h2>
     <form action="https://formspree.io/f/xzbnrlkn" method="POST">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
@@ -99,8 +99,8 @@
             <i class="fa fa-paper-plane"></i> SEND
           </button>
       </div>
-      </form>
-</div>
+    </form>
+</section>
 
 
 <!-- Footer -->

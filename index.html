@@ -6,6 +6,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Helsinki offers great birding opportunities throughout the year. A guided tour is the best way to discover all those wonders.">
+<meta property="og:title" content="Birdwatching Helsinki - guided tours with Samuel Bloch" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://birdwatching-helsinki.com/" />
+<meta property="og:image" content="https://birdwatching-helsinki.com/images/banner-fb.JPG" />
+<meta property="og:image:alt" content="A Spotted Redshank photographed at sunrise in Helsinki, in spring" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,6 +24,18 @@
       "url" : "https://birdwatching-helsinki.com/"
     }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Birdwatching Helsinki",
+  "image": "https://birdwatching-helsinki.com/images/vkl1.png",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Helsinki"},
+  "email": "sbloch.contact@gmail.com"
+}
+</script>
 <style type="text/css">
   #wide-title {
     line-height: 1.2em;
@@ -28,7 +45,7 @@
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<nav class="w3-top">
   <div class="w3-bar w3-card w3-animate-top w3-white" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-deep-orange w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
@@ -47,46 +64,46 @@
     <a href="trip-reports.html" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-pencil-square-o"></i> TRIP REPORTS</a>
     <a href="suomeksi.html" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-language"></i> SUOMEKSI</a>
   </div>
-</div>
+</nav>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container" id="home">
+<section class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-topmiddle page-title">
     <h1 class="w3-center w3-animate-opacity w3-text-white birdwatching-title">BIRDWATCHING HELSINKI</h1>
     <div class="w3-center w3-padding-large w3-animate-opacity w3-text-white best-of-birding-title">Best of Birding in Finland's capital</div>
   </div>
-</div>
+</section>
 
 <!-- Container (Tours Section) -->
-<div class="w3-content w3-container me-padding-32" id="tours-1">
+<main class="w3-content w3-container me-padding-32" id="tours-1">
   <h2 class="w3-center" id="wide-title">Book a birdwatching experience in Helsinki and discover the nature that surrounds us!</h2>
-  <p class="w3-center">Of all the things you can do when being outside, birdwatching has to be one of the most relaxing and entertaining, for the spectacle of birds going about their business is truly fascinating. The diversity of sizes and shapes, colours and behaviours is astonishing, and you can discover new things every time. It is an everlasting source of joy for who knows where to look!</p>
-  <p class="w3-center">To enjoy this adventure, you don't need to be a bird expert. You don't even need to have any prior birding experience! All you should bring is your curiosity and the willingness to be charmed by the wonders of nature.</p>
-  <p class="w3-center">We will have a birding scope with us. This fantastic instrument is the best way to "bring birds closer", as its powerful zoom lets us admire birds in great detail without disturbing them. I will point it to all birds of interest, and you'll also be free to move it around and explore on your own. Be prepared to see birds like you've never seen them before!</p>
-</div>
+  <p class="w3-center">Of all the things you can do when being outside, birdwatching has to be one of the most relaxing and entertaining, for <strong>the spectacle of birds</strong> going about their business is truly fascinating. The diversity of sizes and shapes, colours and behaviours is astonishing, and you can discover new things every time. It is an everlasting source of joy for who knows where to look!</p>
+  <p class="w3-center">To enjoy this adventure, you don't need to be a bird expert. You don't even need to have any prior birding experience! All you should bring is <strong>your curiosity</strong> and the willingness to be charmed by the wonders of nature.</p>
+  <p class="w3-center">We will have <strong>a birding scope</strong> with us. This fantastic instrument is the best way to "bring birds closer", as its powerful zoom lets us admire birds in great detail without disturbing them. I will point it to all birds of interest, and you'll also be free to move it around and explore on your own. Be prepared to see birds like you've never seen them before!</p>
+</main>
 
   <!-- Container (Gallery in text) -->
-<div class="w3-content w3-container me-padding-0" id="inline-gallery">
+<section class="w3-content w3-container me-padding-0" id="inline-gallery">
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-5.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Wood Warbler (sirittäjä)">
-      <p class="w3-center inline-gallery-caption">Wood Warbler (sirittäjä)</p>
-    </div>
+      <figcaption class="w3-center inline-gallery-caption">Wood Warbler (sirittäjä)</figcaption>
+    </figure>
 
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-18b.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Northern Hawk-owl (hiiripöllö)">
-      <p class="w3-center inline-gallery-caption">Northern Hawk-owl (hiiripöllö)</p>
-    </div>
+      <figcaption class="w3-center inline-gallery-caption">Northern Hawk-owl (hiiripöllö)</figcaption>
+    </figure>
 
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-3.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Horned Grebe (mustakurkku uikku)">
-      <p class="w3-center inline-gallery-caption">Horned Grebe (mustakurkku uikku)</p>
-    </div>
+      <figcaption class="w3-center inline-gallery-caption">Horned Grebe (mustakurkku uikku)</figcaption>
+    </figure>
   </div>
-</div>
+</section>
 
-<div class="w3-content w3-container me-padding-32" id="tours-2">
+<section class="w3-content w3-container me-padding-32" id="tours-2">
   <h3 class="w3-center">Why me</h3>
   <p class="w3-center">Hi, I'm Samuel, I'm a professional guide. I have experience with international customers, and I love birding around Helsinki. In the field, I am known for my relaxed but dedicated attitude. I find joy in sharing my knowledge and enthusiasm for the natural world. I adapt to your level of experience, whether you're a novice or an experienced birder, and make sure we have a enriching time together.<br>
   I provide a birding scope for our outing, and of course I bring all my expertise and motivation!</p>
@@ -122,10 +139,10 @@
         Bird names in all languages!</p>
     </div>
 
-    <div class="w3-col m6 w3-center w3-padding-large">
+    <figure class="w3-col m6 w3-center w3-padding-large">
       <img src="images/vkl1.png" class="w3-image" alt="Photo of me birding in Helsinki" width="500" height="333">
-      <p>Birding in Helsinki</p>
-    </div>
+      <figcaption>Birding in Helsinki</figcaption>
+    </figure>
   </div>
 
   <div class="w3-row">
@@ -141,9 +158,9 @@
         Food and other extras</p>
     </div>
   </div>
-</div>
+</section>
 
-<div class="w3-content w3-container me-padding-32" id="contact_form">
+<section class="w3-content w3-container me-padding-32" id="contact_form">
   <h2 class="w3-center">CONTACT ME TO BOOK YOUR TRIP</h2>
     <form action="https://formspree.io/f/xzbnrlkn" method="POST">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
@@ -165,9 +182,9 @@
           </button>
       </div>
       </form>
-</div>
+</section>
 
-<div class="w3-content w3-container me-padding-32" id="payment">
+<section class="w3-content w3-container me-padding-32" id="payment">
   <p><strong>Payment</strong><br>
   I will send you an invoice by email. You can pay me:<br>
   - by cash, when we meet<br>
@@ -181,16 +198,16 @@
   Contact me for more details!<br>
   </p>
   <p><strong>Note</strong>: I do not use playback to attract birds.</p>    
-</div>
+</section>
 
 <!-- Second Parallax Image with PLACES Text -->
-<div class="bgimg-3 w3-display-container">
+<figure class="bgimg-3 w3-display-container">
   <div class="w3-display-middle">
     <h2 class="w3-text-white birdwatching-title">TOURS</h2>
   </div>
-</div>
+</figure>
 
-<div class="w3-content w3-container me-padding-32" id="accessibility">
+<section class="w3-content w3-container me-padding-32" id="accessibility">
   <p class="w3-center">Easily accessible from the heart of the city, the best local nature reserves have a lot to offer to the keen birder. Woods, reedbeds, fields and mudflats form a myriad of microhabitats that host countless birds. From the rare Citrine Wagtail to the loud Black Woodpecker, from the endearing Horned Grebe to the hectic Bearded Reedling, there are wonders waiting to be discovered!</p>
   <h3 class="w3-center">The places</h3>
   <p class="w3-center">The main hotspots are Vanhakaupunki, Laajalahti and Suomenoja. They all have their own specificities, but one thing for sure is that they have birds, and they are easy to explore through paths, boardwalks and birdwatching towers.</p>
@@ -209,89 +226,89 @@
   <p class="w3-center">Do you want to spend longer in the field? Do you want to target specific species? Let me know, I'm sure we can arrange it.</p>
   <p class="w3-center">Our targets could include Black Grouse, Red-throated and Black-throated Diver, Common Crane, Pallid Harrier, Long-tailed Duck, Tawny Owl, White-throated Dipper, European Nightjar, Elk (Moose)...</p>
   <p class="w3-center">I cannot drive, but if you have a car (your own or rental), I can hop on and guide from the passenger seat.</p>
-</div>
+</section>
+
 <!-- Third Parallax Image with GALLERY Text -->
-<div class="bgimg-2 w3-display-container">
+<figure class="bgimg-2 w3-display-container">
   <div class="w3-display-middle">
     <h2 class="w3-text-white birdwatching-title">GALLERY</h2>
   </div>
-</div>
+</figure>
 
 <!-- Container (Modal Slideshow Section) -->
-<div class="w3-content w3-container me-padding-32 gallery-slideshow" id="gallery-slideshow">
+<section class="w3-content w3-container me-padding-32 gallery-slideshow" id="gallery-slideshow">
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
       <!-- Gallery rows -->
   <div class="w3-row-padding w3-center">
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-30.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(1)" class="gallery-thumbnail" alt="Tufted Duck (tukkasotka)">
-    </div>
+    </figure>
 
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-20.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(2)" class="gallery-thumbnail" alt="Great Grey Owl (lapinpöllö)">
-    </div>
+    </figure>
 
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-6.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(3)" class="gallery-thumbnail" alt="Spotted Redshank (mustaviklo)">
-    </div>
+    </figure>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-28.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(4)" class="gallery-thumbnail" alt="Yellowhammer (keltasirkku)">
-    </div>
+    </figure>
 
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/vkl2.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(5)" class="gallery-thumbnail" alt="Birding in Helsinki">
-    </div>
+    </figure>
 
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-12.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(6)" class="gallery-thumbnail" alt="Common Rosefinch (punavarpunen)">
-    </div>
+    </figure>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-29.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(7)" class="gallery-thumbnail" alt="White Wagtail (västäräkki)">
-    </div>
+    </figure>
 
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-10.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(8)" class="gallery-thumbnail" alt="Common Pochard (punasotka)">
-    </div>
+    </figure>
 
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-17.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(9)" class="gallery-thumbnail" alt="Dunlin (suosirri)">
-    </div>
+    </figure>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-15.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(10)" class="gallery-thumbnail" alt="Gadwall (harmaasorsa)">
-    </div>
+    </figure>
 
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-31.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(11)" class="gallery-thumbnail" alt="Great Tit (talitiainen)">
-    </div>
+    </figure>
 
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-8.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(12)" class="gallery-thumbnail" alt="Mute Swan (kyhmyjoutsen)">
-    </div>
-
+    </figure>
   </div>  
 
   <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-27.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(13)" class="gallery-thumbnail" alt="Eurasian Bullfinch (punatulkku)">
-    </div>
+    </figure>
 
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-26.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(14)" class="gallery-thumbnail" alt="Eurasian Teal (tavi)">
-    </div>
+    </figure>
 
-    <div class="w3-col m4">
+    <figure class="w3-col m4">
       <img src="images/birding-32.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(15)" class="gallery-thumbnail" alt="Whooper Swan (laulujoutsen)">
-    </div>
+    </figure>
   </div>  
-</div>
+</section>
 
 <!-- Modal for slideshow -->
 <div id="modal-slideshow" class="w3-modal w3-black modal-slideshow">
@@ -461,7 +478,7 @@ function toggleFunction() {
   // 3. To add a p element after it
   // 5. Containing that element's alt text
   $(".gallery-thumbnail").each(function() {
-    $(this).after('<p class="alt">' + $(this).attr('alt') + '</p>');
+    $(this).after('<figcaption class="alt">' + $(this).attr('alt') + '</figcaption>');
   })
 
 // CSS shows/hides the alt text on hover
