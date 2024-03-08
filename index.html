@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Birdwatching Helsinki - birding tours with Samuel Bloch</title>
+  <title>Birdwatching Helsinki - guided tours with Samuel Bloch</title>
   <link rel="icon" type="image/x-icon" href="images/favicon-sb-2.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Helsinki offers great birding opportunities throughout the year. A guided tour is the best way to discover all those wonders.">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="birdwatching-helsinki.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "Birdwatching Helsinki",
+      "url" : "https://birdwatching-helsinki.com/"
+    }
+</script>
+<style type="text/css">
+  #wide-title {
+    line-height: 1.2em;
+  }
+</style>
 </head>
 <body>
 
@@ -29,9 +43,9 @@
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-smile-o"></i> TESTIMONIALS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-pencil-square-o"></i> TRIP REPORTS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-language"></i> SUOMEKSI</a>
+    <a href="testimonials.html" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-smile-o"></i> TESTIMONIALS</a>
+    <a href="trip-reports.html" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-pencil-square-o"></i> TRIP REPORTS</a>
+    <a href="suomeksi.html" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-language"></i> SUOMEKSI</a>
   </div>
 </div>
 
@@ -45,12 +59,9 @@
 
 <!-- Container (Tours Section) -->
 <div class="w3-content w3-container me-padding-32" id="tours-1">
-  <h2 class="w3-center">TOURS</h2>
-  <p class="w3-center">Book a birdwatching experience in Helsinki and discover the nature that surrounds us!</p>
-  <p class="w3-center">Spending time in nature has well-known benefits for both physical and mental wellbeing. In particular, feeling connected to the wild world is strongly linked to increased happiness and lower stress.</p>
+  <h2 class="w3-center" id="wide-title">Book a birdwatching experience in Helsinki and discover the nature that surrounds us!</h2>
   <p class="w3-center">Of all the things you can do when being outside, birdwatching has to be one of the most relaxing and entertaining, for the spectacle of birds going about their business is truly fascinating. The diversity of sizes and shapes, colours and behaviours is astonishing, and you can discover new things every time. It is an everlasting source of joy for who knows where to look!</p>
-  <p class="w3-center">If you are visiting Helsinki, exploring a nature reserve is a fantastic opportunity to see the city in a different light. If you live here, hiring a guide to watch birds is the best way to learn about your wild neighbours and appreciate their ways of life.<br>
-  You don't need to be a bird expert. You don't even need to have any prior birding experience! All you should bring is your curiosity and the willingness to be charmed by the wonders of nature.</p>
+  <p class="w3-center">To enjoy this adventure, you don't need to be a bird expert. You don't even need to have any prior birding experience! All you should bring is your curiosity and the willingness to be charmed by the wonders of nature.</p>
   <p class="w3-center">We will have a birding scope with us. This fantastic instrument is the best way to "bring birds closer", as its powerful zoom lets us admire birds in great detail without disturbing them. I will point it to all birds of interest, and you'll also be free to move it around and explore on your own. Be prepared to see birds like you've never seen them before!</p>
 </div>
 
@@ -77,11 +88,8 @@
 
 <div class="w3-content w3-container me-padding-32" id="tours-2">
   <h3 class="w3-center">Why me</h3>
-  <p class="w3-center">I am a professional guide, I have experience with international customers, and I love birding around Helsinki. In the field, I am known for my relaxed but dedicated attitude. I find joy in sharing my knowledge and enthusiasm for the natural world. I adapt to your level of experience, whether you're a novice or an experienced birder, and make sure we have a enriching time together.<br>
-  I provide a birding scope for our outing, and of course I bring all my experience and motivation!</p>
-
-  <h3 class="w3-center">All seasons</h3>
-  <p class="w3-center">In Helsinki, the peak period for birds is from early May to late June, when birds are migrating north, singing, nesting, raising chicks... but all seasons have something to offer. March and April bring the first migrating birds (Northern Lapwing, Whooper Swan...) and some waders already show up in late July for autumn migration, which continues through until October. Winter is a quiet time, but birding in the forest and around feeders can yield jewels such as White-backed Woodpecker, Eurasian Bullfinch or even a Northern Hawk-Owl or a Great Grey Owl!</p>
+  <p class="w3-center">Hi, I'm Samuel, I'm a professional guide. I have experience with international customers, and I love birding around Helsinki. In the field, I am known for my relaxed but dedicated attitude. I find joy in sharing my knowledge and enthusiasm for the natural world. I adapt to your level of experience, whether you're a novice or an experienced birder, and make sure we have a enriching time together.<br>
+  I provide a birding scope for our outing, and of course I bring all my expertise and motivation!</p>
 
   <p class="w3-center"><b>This experience is for you if...</b> you want to explore the wild side of Helsinki in a relaxed setting, get to know birds and admire them without pressure. It is very suitable for families with children, and you don't need any prior birding experience.<br>
   <b>This is not for you if...</b> you want to bag as many species as possible in as little time as possible.</p>
@@ -178,7 +186,7 @@
 <!-- Second Parallax Image with PLACES Text -->
 <div class="bgimg-3 w3-display-container">
   <div class="w3-display-middle">
-    <h2 class="w3-text-white birdwatching-title">BIRDS</h2>
+    <h2 class="w3-text-white birdwatching-title">TOURS</h2>
   </div>
 </div>
 
@@ -189,7 +197,14 @@
   <p><u>Vanhakaupunki</u>: an extensive wetland, complete with light woods, fields, reedbeds and ponds. Citrine Wagtail is the real prize there, but there's also an abundance of waders, ducks, warblers and other songsters. Highlights include a White-tailed Eagle nest among a busy cormorant colony and maybe a Great Grey Shrike.<br>
   <u>Laajalahti</u>: an amazing wetland on the other side of the city, with a similar habitat patchwork. Spectacular during migrations for ducks, terns and waders, we will also look for a Common Rosefinch singing it's signature "Pleased to meet you" song. The woods hold Wood Warblers and woodpeckers, among others.<br>
   <u>Suomenoja</u>: this wetland holds the largest Black-headed Gull colony in Finland. Among those loud birds, we'll find nesting Horned Grebe, Common Goldeneye, Eurasian Shoveler... it's a small but wild place, there is always something happening. A bay nearby may have Red-necked Grebes.</p>
+
+  <h3 class="w3-center">All seasons</h3>
+  <p class="w3-center">In Helsinki, the peak period for birds is from early May to late June, when birds are migrating north, singing, nesting, raising chicks... but all seasons have something to offer. March and April bring the first migrating birds (Northern Lapwing, Whooper Swan...) and some waders already show up in late July for autumn migration, which continues through until October. Winter is a quiet time, but birding in the forest and around feeders can yield jewels such as White-backed Woodpecker, Eurasian Bullfinch or even a Northern Hawk-Owl or a Great Grey Owl!</p>
   
+  <h3 class="w3-center">Why birding (or birdwatching)?</h3>
+  <p class="w3-center">Spending time in nature has well-known benefits for both physical and mental wellbeing. In particular, feeling connected to the wild world is strongly linked to increased happiness and lower stress.</p>
+  <p class="w3-center">If you are visiting Helsinki, exploring a nature reserve is a fantastic opportunity to see the city in a different light. If you live here, hiring a guide to watch birds is the best way to learn about your wild neighbours and appreciate their ways of life.<br>
+
   <h3 class="w3-center">Customize your tour</h3>
   <p class="w3-center">Do you want to spend longer in the field? Do you want to target specific species? Let me know, I'm sure we can arrange it.</p>
   <p class="w3-center">Our targets could include Black Grouse, Red-throated and Black-throated Diver, Common Crane, Pallid Harrier, Long-tailed Duck, Tawny Owl, White-throated Dipper, European Nightjar, Elk (Moose)...</p>
@@ -286,46 +301,46 @@
       <img src="images/birding-30.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
     </div>
     <div class="my-slides">
-      <img src="images/birding-20.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
+      <img src="images/birding-20.jpg" style="width:100%" alt="Great Grey Owl (lapinpöllö)">
     </div>
     <div class="my-slides">
-      <img src="images/birding-6.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
+      <img src="images/birding-6.jpg" style="width:100%" alt="Spotted Redshank (mustaviklo)">
     </div>
     <div class="my-slides">
-      <img src="images/birding-28.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
+      <img src="images/birding-28.jpg" style="width:100%" alt="Yellowhammer (keltasirkku)">
     </div>
     <div class="my-slides">
-      <img src="images/vkl2.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
+      <img src="images/vkl2.jpg" style="width:100%" alt="Birding in Helsinki">
     </div>
     <div class="my-slides">
-      <img src="images/birding-12.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
+      <img src="images/birding-12.jpg" style="width:100%" alt="Common Rosefinch (punavarpunen)">
     </div>
     <div class="my-slides">
-      <img src="images/birding-29.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
+      <img src="images/birding-29.jpg" style="width:100%" alt="White Wagtail (västäräkki)">
     </div>
     <div class="my-slides">
-      <img src="images/birding-10.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
+      <img src="images/birding-10.jpg" style="width:100%" alt="Common Pochard (punasotka)">
     </div>
     <div class="my-slides">
-      <img src="images/birding-17.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
+      <img src="images/birding-17.jpg" style="width:100%" alt="Dunlin (suosirri)">
     </div>
     <div class="my-slides">
-      <img src="images/birding-15.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
+      <img src="images/birding-15.jpg" style="width:100%" alt="Gadwall (harmaasorsa)">
     </div>
     <div class="my-slides">
-      <img src="images/birding-31.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
+      <img src="images/birding-31.jpg" style="width:100%" alt="Great Tit (talitiainen)">
     </div>
     <div class="my-slides">
-      <img src="images/birding-8.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
+      <img src="images/birding-8.jpg" style="width:100%" alt="Mute Swan (kyhmyjoutsen)">
     </div>
     <div class="my-slides">
-      <img src="images/birding-27.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
+      <img src="images/birding-27.jpg" style="width:100%" alt="Eurasian Bullfinch (punatulkku)">
     </div>
     <div class="my-slides">
-      <img src="images/birding-26.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
+      <img src="images/birding-26.jpg" style="width:100%" alt="Eurasian Teal (tavi)">
     </div>
     <div class="my-slides">
-      <img src="images/birding-32.jpg" style="width:100%" alt="Tufted Duck (tukkasotka)">
+      <img src="images/birding-32.jpg" style="width:100%" alt="Whooper Swan (laulujoutsen)">
     </div>
 
       <!-- Next and previous buttons -->
