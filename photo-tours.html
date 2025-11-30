@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Helsinki Bird Photo Workshops</title>
+  <link rel="icon" type="image/x-icon" href="images/merikotka-favicon-5.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hi, I'm Samuel, I'm a photographer and guide specialised in the birds of Helsinki. Join me to photograph our friendly summer birds!">
+<meta property="og:title" content="Birdwatching Helsinki - guided tours with Samuel Bloch" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://birdwatching-helsinki.com/photo-tours.html" />
+<meta property="og:image" content="https://birdwatching-helsinki.com/images/OG-photo.jpg" />
+<meta property="og:image:alt" content="Barnacle Geese are own main target during a photo workshop in Suomenlinna" />
+<meta property="og:site_name" content="Birdwatching Helsinki" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="birdwatching-helsinki.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style type="text/css">
+/* First image (Logo. Full height) */
+.bgimg-5 {
+  background-image: url('images/photo-workshop/photo-41.jpg');
+  min-height: 100%;
+}
+.bgimg-6 {
+  background-image: url('images/photo-workshop/photo-5.jpg');
+  min-height: 400px;
+  opacity: 0.9;
+}
+.bgimg-7 {
+  background-image: url('images/photo-workshop/photo-38.jpg');
+  min-height: 400px;
+  opacity: 0.9;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<nav class="w3-top">
+  <div class="w3-bar w3-card w3-animate-top w3-white" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-deep-orange w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="https://birdwatching-helsinki.com/" class="w3-bar-item w3-button w3-hover-deep-orange"><i class="fa fa-binoculars"></i> BIRD TOURS</a>
+    <a href="photo-tours.html" class="w3-bar-item w3-button w3-deep-orange w3-hover-deep-orange"><i class="fa fa-camera"></i> PHOTO TOURS</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-deep-orange"><i class="fa fa-user"></i> ABOUT &#38; CONTACT</a>
+    <a href="testimonials.html" class="w3-bar-item w3-button w3-hide-small w3-hover-deep-orange"><i class="fa fa-smile-o"></i> TESTIMONIALS</a>
+    <a href="trip-reports.html" class="w3-bar-item w3-button w3-hide-small w3-hover-deep-orange"><i class="fa fa-pencil-square-o"></i> TRIP REPORTS</a>
+    <a href="suomeksi.html" class="w3-bar-item w3-button w3-hide-small w3-hover-deep-orange"><i class="fa fa-language"></i> SUOMEKSI</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="about.html" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-user"></i> ABOUT &#38; CONTACT</a>
+    <a href="testimonials.html" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-smile-o"></i> TESTIMONIALS</a>
+    <a href="trip-reports.html" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-pencil-square-o"></i> TRIP REPORTS</a>
+    <a href="suomeksi.html" class="w3-bar-item w3-button w3-hover-deep-orange" onclick="toggleFunction()"><i class="fa fa-language"></i> SUOMEKSI</a>
+  </div>
+</nav>
+
+<!-- First Parallax Image with Logo Text -->
+<section class="bgimg-5 w3-display-container" id="home">
+  <div class="w3-display-topmiddle page-title-photo">
+    <h1 class="w3-center w3-animate-opacity w3-text-white birdwatching-title">BIRD PHOTOGRAPHY</h1>
+    <div class="w3-center w3-padding-large w3-animate-opacity w3-text-white best-of-birding-title">in Helsinki</div>
+  </div>
+</section>
+
+
+<!-- Container (Tours Section) -->
+<main class="w3-content w3-container me-padding-32" id="tours-1">
+  <h2 class="w3-center" id="wide-title">Join a guided tour - photograph the birds of Helsinki!</h2>
+  <p class="w3-center" id="under-title">We welcome all skill levels</p>
+  <p class="w3-center">In spring and summer, <strong>birds abound in Helsinki</strong>, and there's no better place than Suomenlinna to meet them up close. This constellation of islands, a UNESCO World Heritage site, is home to a variety of coastal species that delight visitors with their beauty and confidence. Ease of access makes it a prime location for the keen photographer.</p>
+  <p class="w3-center">Whether you've photographed birds for years, or just want to try it out, there is something for you in Suomenlinna. <strong>All you need is the willingness to explore.</strong> Bring your gear and your curiosity, and prepare to be charmed by the local feathered residents.</p>
+</main>
+
+  <!-- Container (Gallery in text) -->
+<section class="w3-content w3-container me-padding-0" id="inline-gallery">
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Hooded Crow (varis)">
+      <figcaption class="w3-center inline-gallery-caption">Hooded Crow (varis)</figcaption>
+    </figure>
+
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-2.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Common Eider (haahka)">
+      <figcaption class="w3-center inline-gallery-caption">Common Eider (haahka)</figcaption>
+    </figure>
+
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-3.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Barnacle Goose (valkoposkihanhi)">
+      <figcaption class="w3-center inline-gallery-caption">Barnacle Goose (valkoposkihanhi)</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="w3-content w3-container me-padding-32" id="tours-2">
+  <h3 class="w3-center">Why me</h3>
+  <p class="w3-center">Hi, I'm Samuel, I'm a professional guide. I have experience with international customers, and I love photographing birds around Helsinki. In the field, I am known for my relaxed but dedicated attitude, and I adapt to your level of experience and your wishes for the evening, whether you're an experienced photographer or a novice. All my expertise and motivation are here to guide you around the islands and put you in position to capture great images.</p>
+
+  <p class="w3-center"><b>This experience is for you if...</b> you want to explore the wild side of Helsinki in a relaxed setting, get to know the local birds and photograph them without pressure. If you come from abroad, it's a brilliant way to meet the friendly birds of Helsinki in a picturesque setting.<br>
+  <b>This is not for you if...</b> you want to photograph as many species as possible in as little time as possible.</p>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-padding-large">
+      <p><strong>Rates</strong><br>
+        1 person: 250€<br>
+        2 persons: 400€<br>
+        3 persons: 500€<br>
+        <br>
+        <strong>Dates</strong><br>
+        April 20 to July 20<br>
+        2026 dates to be announced<br>
+        Pick your day, please enquire!<br>
+        <br>
+        <strong>Schedule</strong><br>
+        We meet in Kauppatori (Helsinki's central harbour) and travel to Suomenlinna by ferry. We will aim to arrive 3 hours before sunset, and shoot there until it's dark.<br>
+        <br>
+        <strong>Targets</strong><br>
+        Barnacle Goose, Common Eider, Arctic Tern, Eurasian Oystercatcher, Common Gull, Northern Wheatear, White Wagtail<br>
+        <br>
+        <strong>Recommended gear</strong><br>
+        A lens that reaches 300mm or more is a must. Another one in the 24-200mm range can offer surprising creative options.<br>
+        Sturdy clothes to lie down on grass, gravel, rock and bird droppings.<br>
+        A light jacket against the wind.<br>
+        Water and snacks, as needed.<br>
+        <br>
+        <strong>The languages I speak</strong><br>
+        English, French, some Spanish and some Finnish.<br>
+        Bird names in all languages!<br>
+        </p>
+    </div>
+
+    <figure class="w3-col m6 w3-padding-large">
+      <img src="images/photo-workshop/photo-4.jpg" class="w3-image w3-center" alt="Portrait of a Barnacle Goose in Helsinki" width="500" height="333">
+      <figcaption class="w3-center">Barnacle Goose</figcaption>
+      <p><strong>What you pay for</strong><br>
+        Up to 4 hours of private and personalized tuition in bird photography.<br>
+        <br>
+        <strong>Not included</strong><br>
+        Transportation (HSL ticket needed for the ferry)<br>
+        Insurance<br>
+        Food and other extras</p>
+    </figure>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m10 w3-padding-large">
+      <h3 class="w3-center" id="responsibility">Social and environmental responsibility</h3>
+      <p class="w3-center">For each person I take on tour, I'm happy to donate <strong>10€</strong> to <a href="https://www.sll.fi/en/" target="_blank" class="w3-text-deep-orange orange-link">Suomen Luonnonsuojeluliitto</a>, the Finnish Association for Nature Conservation.<br>
+      They do tremendous work throughout the country to protect sea, forest, peatland... and the wild denizens of these places. I'm proud to support them!</p>
+    </div>
+    <figure class="w3-col m2" id="sll-logo">
+      <img src="images/sll-logo-large-black.png" class="w3-image w3-center" alt="SLL logo">     
+    </figure>
+  </div>
+</section>
+
+<section class="w3-content w3-container me-padding-32" id="contact_form">
+  <h2 class="w3-center">CONTACT ME TO BOOK YOUR TRIP</h2>
+    <form action="https://formspree.io/f/mpwnallq" method="POST">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <label for="name"><b>Name </b></label><span class="w3-text-deep-orange">*</span><br>
+            <input class="w3-input w3-border" type="text" id="name" required name="name">
+          </div>
+          <div class="w3-half">
+            <label for="email"><b>Email </b></label><span class="w3-text-deep-orange">*</span><br>
+            <input class="w3-input w3-border" type="email" id="email" required name="email">
+          </div>
+        </div>
+        <label for="message"><b>Tell me more </b><span class="w3-text-deep-orange">*</span><br>
+        Tell me about your preferred date(s), your experience level, your learning objectives...</label><br>
+        <textarea class="w3-input w3-border" type="textarea" id="message" rows="4" required style="resize:vertical" name="message"></textarea>
+        <div class="w3-center">
+          <button class="w3-button w3-black w3-section w3-hover-deep-orange" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND
+          </button>
+      </div>
+      </form>
+</section>
+
+<section class="w3-content w3-container me-padding-32" id="payment">
+  <p><strong>Payment</strong><br>
+  I will send you an invoice by email. You can pay me:<br>
+  - by cash, when we meet<br>
+  - by bank transfer, before we meet<br>
+  - by Paypal or Wise, before we meet (with a small fee)<br>
+  </p>
+  <p><strong>Accessibility</strong><br>
+  You can expect uneven surfaces, loose gravel and short but steep slopes.<br>
+  However, it's possible to plan an easier route, so please get in touch if this is a concern!<br>
+  </p>
+  <p><strong>Note</strong>: I do not use playback or baiting to attract birds.</p>    
+</section>
+
+<!-- Second Parallax Image with PLACES Text -->
+<figure class="bgimg-6 w3-display-container">
+  <div class="w3-display-middle">
+    <h2 class="w3-text-white birdwatching-title">SUOMENLINNA</h2>
+  </div>
+</figure>
+
+<section class="w3-content w3-container me-padding-32" id="accessibility">
+  <h3 class="w3-center">Fairyland for birds</h3>
+  <p class="w3-center">The star of the show is undoubtedly the <strong>Barnacle Goose</strong>. This gorgeous bird, bold of plumage and bolder of character, has conquered the rocky coast of Helsinki. In Suomenlinna, we'll find them wandering on the paths and the rocks, feeding in the grass or swimming in the sea. They arrive in late April and by the beginning of May, the females are sitting on eggs, while their mate stands guard nearby. If we keep our distances, we can observe this intimate moment without disturbing them. June is baby time: the tiny fluffballs are out, running everywhere under the supervision of their parents. They are adorable! As the season continues, they grow and start moulting into adult plumage.</p>
+
+    <!-- Container (Gallery in text) -->
+<section class="w3-content w3-container me-padding-0" id="inline-gallery">
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-6.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Barnacle Goose (valkoposkihanhi)">
+    </figure>
+
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-7.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Barnacle Goose (valkoposkihanhi)">
+    </figure>
+
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-8.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Barnacle Goose (valkoposkihanhi)">
+    </figure>
+  </div>
+</section>
+
+  <p class="w3-center">The <strong>Common Eider</strong> is another stunner, with its funny head and its plumage full of contrast. We'll find the males in May, but afterwards they'll move to their summer moulting grounds. Females take care of the chicks alone, sometimes gathering them in a creche where a few of them manage a lot of ducklings.</p>
+
+        <!-- Container (Gallery in text) -->
+  <section class="w3-content w3-container me-padding-0" id="inline-gallery">
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <figure class="w3-col m4">
+        <img src="images/photo-workshop/photo-9.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Common Eider (haahka)">
+      </figure>
+
+      <figure class="w3-col m4">
+        <img src="images/photo-workshop/photo-10.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Common Eider (haahka)">
+      </figure>
+
+      <figure class="w3-col m4">
+        <img src="images/photo-workshop/photo-11.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Common Eider (haahka)">
+      </figure>
+    </div>
+  </section>
+
+  <p class="w3-center">On the shore, we'll try to come near the <strong>Eurasian Oystercatcher</strong>, but it can be shy. If we are sneaky enough, we may obtain awesome eye-level images of this spectacular black, white and red wader. If we are super lucky, we might even see the babies tucked under their parent's wings to keep warm. Other waders we might encounter include the <strong>Common Sandpiper</strong> and the <strong>Common Redshank</strong>.</p>
+
+      <!-- Container (Gallery in text) -->
+  <section class="w3-content w3-container me-padding-0" id="inline-gallery">
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <figure class="w3-col m4">
+        <img src="images/photo-workshop/photo-12.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Eurasian Oystercatcher (meriharakka)">
+      </figure>
+
+      <figure class="w3-col m4">
+        <img src="images/photo-workshop/photo-13.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Common Sandpiper (rantasipi)">
+      </figure>
+
+      <figure class="w3-col m4">
+        <img src="images/photo-workshop/photo-14b.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Eurasian Oystercatcher (meriharakka)">
+      </figure>
+    </div>
+  </section>
+
+  <p class="w3-center">Around the islands, we'll find gulls and terns. Whether they are fishing, hunting ducklings, resting or quarelling, they are always entertaining. Capturing a <strong>Common Tern</strong> mid-flight is no easy feat, but since they tend to follow a repeating pattern, we can give it a go. It's fun!</p>
+
+      <!-- Container (Gallery in text) -->
+  <section class="w3-content w3-container me-padding-0" id="inline-gallery">
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <figure class="w3-col m4">
+        <img src="images/photo-workshop/photo-15.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Common tern (kalatiira)">
+      </figure>
+
+      <figure class="w3-col m4">
+        <img src="images/photo-workshop/photo-16.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Arctic Tern (lapintiira)">
+      </figure>
+
+      <figure class="w3-col m4">
+        <img src="images/photo-workshop/photo-17.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Lesser Black-backed Gull (selkälokki)">
+      </figure>
+    </div>
+  </section>
+
+  <p class="w3-center">Back on land, two songbirds steal the show. The <strong>White Wagtail</strong> is a familiar sight, but it's always on the move and sometimes approaches too close for our cameras to focus. You'll need to trigger before it's too late! On the other hand, the <strong>Northern Wheatear</strong> is not easily approached, but this talented songster has a few favourite rocks and trees to perch on that we can target.</p>
+
+      <!-- Container (Gallery in text) -->
+  <section class="w3-content w3-container me-padding-0" id="inline-gallery">
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <figure class="w3-col m4">
+        <img src="images/photo-workshop/photo-18.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Northern Wheatear (kivitasku)">
+      </figure>
+
+      <figure class="w3-col m4">
+        <img src="images/photo-workshop/photo-19.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="White Wagtail (västäräkki)">
+      </figure>
+
+      <figure class="w3-col m4">
+        <img src="images/photo-workshop/photo-20.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Northern Wheatear (kivitasku)">
+      </figure>
+    </div>
+  </section>
+
+  <p class="w3-center">Other species we may encounter include Mute Swan, Eurasian Wigeon, Fieldfare and Barn Swallow. If we are super super lucky (!!), we might even find an American Mink or a Eurasian Otter... but don't count on it!</p>
+
+  <h3 class="w3-center">On tour</h3>
+  <p class="w3-center">The meeting point is in <strong>Kauppatori</strong>, by the ferry departure kiosk. We typically depart on the larger ferry, so we can photograph the gulls that follow it even before we step on the islands. Once we are there, we walk to my secrets places, but we'll already encounter birds on the way: geese, wheatears, oystercatchers... they are everywhere!<br>
+In the field, I'm happy to adapt to your wishes. We can stop wherever and whenever you want, we can ignore some birds and focus on others. I can talk as much or as little as needed, either telling about birds (behaviour, habitats, conservation...) or photography (settings, composition, field techniques...). When it comes to getting the shots, I like to lead by voicing my thought process as it happens, but I'm also happy to show you the birds and let you work on your own. <strong>You choose!</strong><br>
+I have carefully selected locations based on bird presence and photo opportunities, but we never know what we'll find. That's nature! So we'll walk around and make the most of our encounters. All tours are different, but always exciting. When the sun sets, we still have a short time to shoot before it's too dark. Then we start walking back to the pier, snapping our last blue hour images on the way, before the ferry takes us back to central Helsinki.</p>
+  
+  <h3 class="w3-center">About Suomenlinna</h3>
+  <p class="w3-center">Suomenlinna is an old fortress-island out of Helsinki, part of UNESCO World Heritage. The ferry that sails there runs every 20-40 minutes (even late into the evening), makes the crossing in only 15 minutes and requires a simple public transportation ticket (HSL zone A).
+Suomenlinna isn't only a museum but also a place where people live. When we walk around, we'll be extra mindful not to invade their privacy. Fortunately, there's plenty of space for everyone.</p>
+
+    <!-- Container (Gallery in text) -->
+<section class="w3-content w3-container me-padding-0" id="inline-gallery">
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-21.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Barnacle Goose along the coast">
+      <figcaption class="w3-center inline-gallery-caption">Barnacle Goose along the coast</figcaption>
+    </figure>
+
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-22.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="View towards Helsinki">
+      <figcaption class="w3-center inline-gallery-caption">View towards Helsinki</figcaption>
+    </figure>
+
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-23.jpg" style="width:100%" onclick="openSingleModal(this)" class="inline-thumbnail" alt="Barnacle Goose in Suomenlinna">
+      <figcaption class="w3-center inline-gallery-caption">Barnacle Goose in Suomenlinna</figcaption>
+    </figure>
+  </div>
+</section>
+
+  <h3 class="w3-center">Clothing</h3>
+  <p class="w3-center">Suomenlinna is a windy place. Sometimes, it can be significantly colder there than in central Helsinki. Plan accordingly: wind jacket, gloves, scarf, beanie... it's better to carry a little too much than to be cold the whole evening!
+In addition, you may want to kneel and lie down to get the best shots. If so, make sure you have the right clothes for that, as the ground may be dusty, wet or hold bird droppings.
+Bring sturdy shoes. Suomenlinna being a former military island, there's an abundance of rocks, concrete and other obstacles on the ground.</p>
+</section>
+
+<!-- Third Parallax Image with GALLERY Text -->
+<figure class="bgimg-7 w3-display-container">
+  <div class="w3-display-middle">
+    <h2 class="w3-text-white birdwatching-title">GALLERY</h2>
+  </div>
+</figure>
+
+<!-- Container (Modal Slideshow Section) -->
+<section class="w3-content w3-container me-padding-32 gallery-slideshow" id="gallery-slideshow">
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <!-- Gallery rows -->
+  <div class="w3-row-padding w3-center">
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-25.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(1)" class="gallery-thumbnail" alt="Barnacle Goose (valkoposkihanhi)">
+    </figure>
+
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-26b.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(2)" class="gallery-thumbnail" alt="Common Gull (kalalokki)">
+    </figure>
+
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-27.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(3)" class="gallery-thumbnail" alt="Barnacle Goose (valkoposkihanhi)">
+    </figure>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-34.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(4)" class="gallery-thumbnail" alt="Fieldfare (räkättirastas)">
+    </figure>
+
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-37.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(5)" class="gallery-thumbnail" alt="Barn Swallow (haarapääsky)">
+    </figure>
+
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-30.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(6)" class="gallery-thumbnail" alt="Barnacle Goose (valkoposkihanhi)">
+    </figure>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-24i.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(7)" class="gallery-thumbnail" alt="Mute Swan (kyhmyjoutsen)">
+    </figure>
+
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-32.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(8)" class="gallery-thumbnail" alt="Mallard (sinisorsa)">
+    </figure>
+
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-33.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(9)" class="gallery-thumbnail" alt="Barnacle Goose (valkoposkihanhi)">
+    </figure>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-44b.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(10)" class="gallery-thumbnail" alt="Common Tern (kalatiira)">
+    </figure>
+
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-42.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(11)" class="gallery-thumbnail" alt="Barnacle Goose (valkoposkihanhi)">
+    </figure>
+
+    <figure class="w3-col m4">
+      <img src="images/photo-workshop/photo-28.jpg" style="width:100%" onclick="openModalSlideshow();currentSlide(12)" class="gallery-thumbnail" alt="White Wagtail (västäräkki)">
+    </figure>
+  </div>  
+</section>
+
+<!-- Modal for slideshow -->
+<div id="modal-slideshow" class="w3-modal w3-black modal-slideshow">
+  <span class="w3-button w3-large w3-black w3-display-topright w3-hover-deep-orange" title="Close image" onclick="closeModalSlideshow()"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-transparent">
+    <div class="my-slides">
+      <img src="images/photo-workshop/photo-25.jpg" style="width:100%" alt="Barnacle Goose (valkoposkihanhi)">
+    </div>
+    <div class="my-slides">
+      <img src="images/photo-workshop/photo-26b.jpg" style="width:100%" alt="Common Gull (kalalokki)">
+    </div>
+    <div class="my-slides">
+      <img src="images/photo-workshop/photo-27.jpg" style="width:100%" alt="Barnacle Goose (valkoposkihanhi)">
+    </div>
+    <div class="my-slides">
+      <img src="images/photo-workshop/photo-34.jpg" style="width:100%" alt="Fieldfare (räkättirastas)">
+    </div>
+    <div class="my-slides">
+      <img src="images/photo-workshop/photo-37.jpg" style="width:100%" alt="Barn Swallow (haarapääsky)">
+    </div>
+    <div class="my-slides">
+      <img src="images/photo-workshop/photo-30.jpg" style="width:100%" alt="Barnacle Goose (valkoposkihanhi)">
+    </div>
+    <div class="my-slides">
+      <img src="images/photo-workshop/photo-24i.jpg" style="width:100%" alt="Mute Swan (kyhmyjoutsen)">
+    </div>
+    <div class="my-slides">
+      <img src="images/photo-workshop/photo-32.jpg" style="width:100%" alt="Mallard (sinisorsa)">
+    </div>
+    <div class="my-slides">
+      <img src="images/photo-workshop/photo-33.jpg" style="width:100%" alt="Barnacle Goose (valkoposkihanhi)">
+    </div>
+    <div class="my-slides">
+      <img src="images/photo-workshop/photo-44b.jpg" style="width:100%" alt="Common Tern (kalatiira)">
+    </div>
+    <div class="my-slides">
+      <img src="images/photo-workshop/photo-42.jpg" style="width:100%" alt="Barnacle Goose (valkoposkihanhi)">
+    </div>
+    <div class="my-slides">
+      <img src="images/photo-workshop/photo-28.jpg" style="width:100%" alt="White Wagtail (västäräkki)">
+    </div>
+
+      <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- Image text -->
+    <div class="gallery-caption-container w3-black w3-center">
+      <p class="w3-opacity w3-large" id="modal-slideshow-caption"></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright w3-hover-deep-orange" title="Close image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-deep-orange w3-padding-64">
+  <a href="#home" class="w3-button w3-white w3-hover-black"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="mailto:sbloch.contact@gmail.com"><i class="fa fa-envelope-o w3-hover-opacity"></i></a>
+    <a href="https://www.facebook.com/birdwatching.helsinki" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/birdwatching.helsinki/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  </div>
+  <p>© Samuel Bloch<br>All pictures are mine. Do not use without authorization.</p>
+</footer>
+ 
+<script>
+// open Single Modal
+function openSingleModal(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// open Modal Slideshow
+function openModalSlideshow() {
+  document.getElementById("modal-slideshow").style.display = "block";
+}
+
+// Close Modal Slideshow
+function closeModalSlideshow() {
+  document.getElementById("modal-slideshow").style.display = "none";
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("my-slides");
+  let dots = document.getElementsByClassName("gallery-thumbnail");
+  let captionText = document.getElementById("modal-slideshow-caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+// Get the modal
+var modal = document.getElementById('modal-slideshow');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+/*
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top", "");
+    }
+}
+*/
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Add alt text after each .img
+  // 1. For all items with class .img...
+  // 2. Run a function for each of them...
+  // 3. To add a p element after it
+  // 5. Containing that element's alt text
+  $(".gallery-thumbnail").each(function() {
+    $(this).after('<figcaption class="alt">' + $(this).attr('alt') + '</figcaption>');
+  })
+
+// CSS shows/hides the alt text on hover
+
+</script>
+
+</body>
+</html>
