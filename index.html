@@ -110,7 +110,7 @@
   </div>
 </section>
 
-<section class="w3-content w3-container me-padding-32" id="tours-2">
+<section class="w3-content w3-container me-padding-top-32" id="tours-2">
   <h3 class="w3-center">Why me</h3>
   <p class="w3-center">Hi, I'm Samuel, I'm a professional guide. I have experience with international customers, and I love birding around Helsinki. In the field, I am known for my relaxed but dedicated attitude. I find joy in sharing my knowledge and enthusiasm for the natural world. I adapt to your level of experience, whether you're an experienced birder or a novice, and make sure we have an enriching time together.<br>
   I provide a birding scope for our outing, and of course I bring all my expertise and motivation!</p>
@@ -118,20 +118,9 @@
   <p class="w3-center"><b>This experience is for you if...</b> you want to explore the wild side of Helsinki in a relaxed setting, get to know birds and admire them without pressure. If you're a birder from abroad, it's a brilliant way to discover the avifauna of Southern Finland. It is also very suitable for families with children, and you don't need any prior birding experience.<br>
   <b>This is not for you if...</b> you want to bag as many species as possible in as little time as possible.</p>
 
-  <div class="w3-row">
+  <div class="w3-row" id="tour-details">
     <div class="w3-col m6 w3-padding-large">
-      <p><strong>Rates</strong><br>
-        1 person: 90€<br>
-        2 persons: 140€<br>
-        3 persons: 180€<br>
-        Any additional person, up to 6: +30€<br>
-        <br>
-        <strong>Dates</strong><br>
-        2026: Jan 19 - Apr 6<br>
-        From May 7<br>
-        Pick your day, please enquire!<br>
-        <br>
-        <strong>Schedule</strong><br>
+      <p id="tour-details-text"><strong>Schedule</strong><br>
         You decide when you want to go. Early morning is usually the most productive time, but sunset and other times work too.<br>
         <br>
         <strong>Recommended gear</strong><br>
@@ -145,20 +134,22 @@
         Bird names in all languages!<br>
         <br>
         <strong>What you pay for</strong><br>
-        3 hours of private guiding through one of the best nature reserves in Helsinki.<br>
-        A birding scope for use during the trip.</p>
-    </div>
-
-    <figure class="w3-col m6 w3-padding-large">
-      <img src="images/vkl1.png" class="w3-image w3-center" alt="Photo of me birding in Helsinki" width="500" height="333">
-      <figcaption class="w3-center">Birding in Helsinki</figcaption>
-      <p><strong>Not included</strong><br>
-        Transportation (we meet on-site, you can get there by metro or bus)<br>
+        Private guiding through some of the best nature reserves in and around Helsinki.<br>
+        A birding scope for use during the trip.<br>
+        <br>
+        <strong>Not included</strong><br>
+        Transportation, except on car tours.<br>
         Insurance<br>
         Food and other extras</p>
+    </div>
+
+    <figure class="w3-col m6 w3-padding-large" id="birding-photo">
+      <img src="images/vkl1.png" class="w3-image w3-center" alt="Photo of me birding in Helsinki" width="500" height="333">
+      <figcaption class="w3-center">Birding in Helsinki</figcaption>
     </figure>
   </div>
 
+<!--
   <div class="w3-row">
     <div class="w3-col m10 w3-padding-large">
       <h3 class="w3-center" id="responsibility">Social and environmental responsibility</h3>
@@ -169,6 +160,114 @@
       <img src="images/sll-logo-large-black.png" class="w3-image w3-center" alt="SLL logo">     
     </figure>
   </div>
+  -->
+</section>
+
+<section class="w3-content w3-container me-padding-32" id="tours-collapse">
+  <h2 class="w3-center">TOURS FOR EVERYONE</h2>
+
+  <h3 class="w3-center">2026 dates</h3>
+  <p class="w3-center">Jan 19 - Apr 6<br>
+    From May 7<br>
+    Pick your day, please enquire!<br>
+  </p>
+
+  <!-- THE CLASSIC TOUR -->
+  <button type="button" class="collapsible"><img class="tour-icon" src="images/merikotka-logo.png"><strong>THE CLASSIC TOUR</strong><span class="duration-year"> - 3 hours - All year</span></button>
+  <div class="w3-row expand-content" id="classic-expand">
+    <div class="w3-content w3-container w3-center">
+    <p><strong>Best birds</strong> (season dependent):<br> Smew, White-tailed Eagle, Spotted Redshank, Black Woodpecker, Citrine Wagtail, Common Rosefinch...</p>
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+      <p><strong>Details</strong><br>
+        Walking tour<br>
+        One location - 3 hours<br>
+        We meet on site, easy access with bus or metro.<br>      
+        Available all year.
+      </p>
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+      <p><strong>Rates</strong><br>
+        1 person: 90€<br>
+        2 persons: 140€<br>
+        3 persons: 180€<br>
+        Any additional person, up to 6: +30€
+      </p>
+    </div>
+  </div>
+
+  <!-- THE BLACK GROUSE TOUR -->
+  <button type="button" class="collapsible"><img class="tour-icon" src="images/teeri-favicon.png"><strong>THE BLACK GROUSE TOUR</strong><span class="duration-year"> - 4 hours - April</span></button>
+  <div class="w3-row expand-content" id="grouse-expand">
+    <div class="w3-content w3-container w3-center">
+    <p><strong>Best birds</strong>:<br> Black Grouse, Common Crane, Northern Pintail, Greater White-fronted Goose, Common Curlew...</p>
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+      <p><strong>Details</strong><br>
+        Car tour<br>
+        Several rural locations - 4 hours<br>
+        We meet in downtown Helsinki, I drive you in my car.<br>      
+        Available only in April.
+      </p>
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+      <p><strong>Rates</strong><br>
+        1 person: 250€<br>
+        2 persons: 300€<br>
+        3 persons: 350€<br>
+        4 persons: 400€
+      </p>
+    </div>
+  </div>
+
+  <!-- THE HORNED GREBE TOUR -->
+  <button type="button" class="collapsible"><img class="tour-icon" src="images/grebe-favicon.png"><strong>THE HORNED GREBE TOUR</strong><span class="duration-year"> - 6 hours - May to July</span></button>
+  <div class="w3-row expand-content" id="grebe-expand">
+    <div class="w3-content w3-container w3-center">
+    <p><strong>Best birds</strong>:<br> Horned Grebe, Garganey, White-tailed Eagle, Broad-billed Sandpiper, Citrine Wagtail, Common Rosefinch...</p>
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+      <p><strong>Details</strong><br>
+        Walking tour, with a tram+metro transfer.<br>
+        Two locations - 6 hours<br>
+        We meet on site, easy access with bus or metro.<br>      
+        Available between May 1 and July 15.
+      </p>
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+      <p><strong>Rates</strong><br>
+        1 person: 185€<br>
+        2 persons: 270€<br>
+        3 persons: 320€<br>
+        Any additional person, up to 6: +30€
+      </p>
+    </div>
+  </div>
+
+  <!-- THE FULL DAY TOUR -->
+  <button type="button" class="collapsible"><img class="tour-icon" src="images/woodpecker-favicon.png"><strong>THE FULL DAY TOUR</strong><span class="duration-year"> - 9 hours - May to September</span></button>
+  <div class="w3-row expand-content" id="full-day-expand">
+    <div class="w3-content w3-container w3-center">
+    <p><strong>Best birds</strong> (season dependent):<br> Greater Scaup, White-tailed Eagle, Pallid Harrier, Red-throated Diver, Black Woodpecker, Merlin, Elk (Moose)...</p>
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+      <p><strong>Details</strong><br>
+        Car tour<br>
+        Several locations in the region - 9 hours<br>
+        We meet in downtown Helsinki, I drive you in my car.<br>      
+        Available from May 1 to September 30.
+      </p>
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+      <p><strong>Rates</strong><br>
+        1 person: 350€<br>
+        2 persons: 400€<br>
+        3 persons: 450€<br>
+        4 persons: 500€
+      </p>
+    </div>
+  </div>
+
 </section>
 
 <section class="w3-content w3-container me-padding-32" id="contact_form">
@@ -184,6 +283,17 @@
             <input class="w3-input w3-border" type="email" id="email" required name="email">
           </div>
         </div>
+
+        <p id="kind-of-trip"><b>What kind of trip would you like go on? </b><span class="w3-text-deep-orange">*</span><br></p>
+        <input type="radio" id="classic" name="tour-choice" value="Classic tour">
+        <label for="html">Classic tour</label><br>
+        <input type="radio" id="grouse" name="tour-choice" value="Black Grouse tour">
+        <label for="css">Black Grouse tour</label><br>
+        <input type="radio" id="grebe" name="tour-choice" value="Horned Grebe tour">
+        <label for="javascript">Horned Grebe tour</label><br>
+        <input type="radio" id="full-day" name="tour-choice" value="Full day tour">
+        <label for="javascript">Full day tour</label><br>
+
         <label for="message"><b>Tell me more </b><span class="w3-text-deep-orange">*</span><br>
         Tell me about your preferred date(s) and the birds you would like to see</label><br>
         <textarea class="w3-input w3-border" type="textarea" id="message" rows="4" required style="resize:vertical" name="message"></textarea>
@@ -208,6 +318,10 @@
   Many bird towers are accessed with steep stairs, but some can be reached with a gentle ramp.<br>
   Contact me for more details!<br>
   </p>
+  <p><strong>Extra</strong><br>
+  I can usually lend you an extra pair of binoculars for our outing. Please enquire.<br>
+  After the tour, I'll send you a list of all the birds we've seen and heard together.
+  </p>
   <p><strong>Note</strong>: I do not use playback to attract birds.</p>    
 </section>
 
@@ -229,14 +343,25 @@
   <h3 class="w3-center">All seasons</h3>
   <p class="w3-center">In Helsinki, the peak period for birds is from early May to late June, when birds are migrating north, singing, nesting, raising chicks... but all seasons have something to offer. March and April bring the first migrating birds (Northern Lapwing, Whooper Swan...) and some waders already show up in early July for autumn migration, which continues through until October. Winter is a quiet time, but birding in the forest and around feeders can yield jewels such as White-backed Woodpecker, Eurasian Bullfinch or even a Northern Hawk-Owl or a Great Grey Owl!</p>
   
-  <h3 class="w3-center">Customize your tour</h3>
-  <p class="w3-center">Do you want to spend longer in the field? Do you want to target specific species? Let me know, I'm sure we can arrange it.</p>
-  <p class="w3-center">Our targets could include Black Grouse, Red-throated and Black-throated Diver, Common Crane, Pallid Harrier, Long-tailed Duck, Tawny Owl, White-throated Dipper, European Nightjar, Elk (Moose)...</p>
-  <p class="w3-center">I cannot drive, but if you have a car (your own or rental), I can hop on and guide from the passenger seat.</p>
+  <h3 class="w3-center">Photography</h3>
+  <p class="w3-center">Tours are well paced for bird photography, we have plenty of time to stop and enjoy the views.<br>
+  Being a photographer myself, I know how to position you for the best pictures, and I can guide you with my voice so you zero-in on the birds and don't miss any of the action.</p>
+  <p class="w3-center">If you're a serious bird photographer and want the best results, then a photo tour to Suomenlinna is the best. Check out all the details on <a href="photo-tours.html" class="w3-text-deep-orange orange-link">the dedicated page</a>.</p>
+
+  <h3 class="w3-center">Access</h3>
+  <p class="w3-center">All our meeting points are located within 30 minutes of Helsinki city centre and are easy to access with public transportation. You can check itineraries at <a href="https://www.hsl.fi/en" target="_blank" class="w3-text-deep-orange orange-link">HSL.fi</a> or in the HSL app. With the latter, you can also buy tickets directly with your phone.<br>
+  Biking is also an option! <a href="https://www.hsl.fi/en/citybikes" target="_blank" class="w3-text-deep-orange orange-link">City bikes</a> are readily available, and your hotel might offer you to rent a bike for a day. Taxis are of course available too.</p>
+  <p class="w3-center">Whatever mode you choose, you can always ask me if you need help to reach the start of your tour.</p>
+  <p class="w3-center">On select tours, I drive you in my car. It is a Kia Ceed SW with 4 passenger seats and ample boot space for everyone's belongings. Note that the 4th seat is narrower and harder than the others.</p>
 
   <h3 class="w3-center">Why birding?</h3>
   <p class="w3-center">Spending time in nature has well-known benefits for both physical and mental wellbeing. In particular, feeling connected to the wild world is strongly linked to increased happiness and lower stress.</p>
-  <p class="w3-center">If you are visiting Helsinki, exploring a nature reserve is a fantastic opportunity to see the city in a different light. If you live here, hiring a guide to watch birds is the best way to learn about your wild neighbours and appreciate their ways of life.<br>
+  <p class="w3-center">If you are visiting Helsinki, exploring a nature reserve is a fantastic opportunity to see the city in a different light. If you live here, hiring a guide to watch birds is the best way to learn about your wild neighbours and appreciate their ways of life.</p>
+  <p class="w3-center">Are you a fan of Wingspan, the board game? Me too, I love it! Many have taken their love of birds from the gaming table to the field, and thus taken their sense of kinship with the living world around them even further.</p>
+
+  <h3 class="w3-center" id="responsibility">Social and environmental responsibility</h3>
+  <p class="w3-center">For each person I take on tour and each 3 hours we spend together, I'm happy to donate <strong>5€</strong> to <a href="https://www.sll.fi/en/" target="_blank" class="w3-text-deep-orange orange-link">Suomen Luonnonsuojeluliitto</a>, the Finnish Association for Nature Conservation.<br>
+  They do tremendous work throughout the country to protect sea, forest, peatland... and the wild denizens of these places. I'm proud to support them!</p>
 </section>
 
 <!-- Third Parallax Image with GALLERY Text -->
@@ -491,8 +616,22 @@ function toggleFunction() {
   $(".gallery-thumbnail").each(function() {
     $(this).after('<figcaption class="alt">' + $(this).attr('alt') + '</figcaption>');
   })
-
 // CSS shows/hides the alt text on hover
+
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("expand-active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
 
 </script>
 

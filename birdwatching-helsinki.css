@@ -37,6 +37,14 @@ figcaption {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+.me-padding-top-32 {
+  padding-top: 32px;
+  padding-bottom: 0px;
+}
+.me-padding-bottom-32 {
+  padding-top: 0px;
+  padding-bottom: 32px;
+}
 .me-image{max-width:100%;max-height:100%}img{vertical-align:middle}a{color:inherit}
 .w3-modal-content {
   height: 700px;
@@ -113,6 +121,9 @@ figcaption {
     letter-spacing: 5px;
     line-height: 120%;
   }
+  .duration-year {
+    display: none;
+  }
 }
 
 /* NARROW SCREEN */
@@ -134,6 +145,9 @@ figcaption {
     font-size: 6vw;
     letter-spacing: 5px;
     line-height: 120%;
+  }
+  .duration-year {
+    display: none;
   }
 }
 
@@ -303,4 +317,92 @@ figcaption {
 }
 #sll-logo {
   padding-top: 20px;
+}
+
+/* Collapsible: Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.expand-active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.expand-content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#classic-expand {
+  background-color: #FFF1EB;
+}
+#grouse-expand {
+  background-color: #EEF5FC;
+}
+#grebe-expand {
+  background-color: #FEFAEC;
+}
+#full-day-expand {
+  background-color: #EFFBF8;
+}
+
+.collapsible:after {
+  content: '\002B'; /* Unicode character for "plus" sign (+) */
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  float: right;
+  margin-left: 5px;
+  margin-top: 12px;
+}
+
+.expand-active:after {
+  content: "\2212"; /* Unicode character for "minus" sign (-) */
+}
+
+.tour-icon {
+  height: 50px;
+  padding-right: 15px;
+}
+
+#tour-details {
+  margin-top: 30px;
+}
+#tour-details-text {
+  margin-top: 0px;
+}
+#birding-photo {
+  margin-top: 20px;
+}
+
+#kind-of-trip {
+  margin-bottom: 0px;
+}
+#full-day {
+  margin-bottom: 16px;
+}
+#classic {
+  accent-color: #FE5D14;
+}
+#grouse {
+  accent-color: #2062aa;
+}
+#grebe {
+  accent-color: #000000;
+}
+#full-day {
+  accent-color: #2CA58D;
 }
