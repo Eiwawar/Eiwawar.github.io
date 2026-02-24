@@ -121,9 +121,6 @@ figcaption {
     letter-spacing: 5px;
     line-height: 120%;
   }
-  .duration-year {
-    display: none;
-  }
 }
 
 /* NARROW SCREEN */
@@ -145,9 +142,6 @@ figcaption {
     font-size: 6vw;
     letter-spacing: 5px;
     line-height: 120%;
-  }
-  .duration-year {
-    display: none;
   }
 }
 
@@ -366,7 +360,7 @@ figcaption {
   color: black;
   float: right;
   margin-left: 5px;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .expand-active:after {
@@ -405,4 +399,43 @@ figcaption {
 }
 #full-day {
   accent-color: #2CA58D;
+}
+
+@media (max-width:650px) and (min-width:450px){
+  .duration-year {
+    display: none;
+  }
+  .collapsible:after {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    float: right;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width:449px){  
+  .duration-year {
+    display: none;
+  }
+  .tour-icon {
+    height: 40px;
+    padding-right: 10px;
+  }
+  .collapsible {
+    font-size: 4.5vw;
+    padding: 18px 12px;
+  }
+  .tour-title {
+    margin-top: 2px;
+  }
+  .collapsible:after {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    float: right;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
 }
