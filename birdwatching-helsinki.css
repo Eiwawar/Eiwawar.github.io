@@ -428,7 +428,7 @@ figcaption {
     padding: 18px 12px;
   }
   .tour-title {
-    margin-top: 2px;
+    margin-top: 3px;
   }
   .collapsible:after {
     font-size: 20px;
@@ -437,5 +437,14 @@ figcaption {
     float: right;
     margin-left: 5px;
     margin-top: 5px;
+  }
+}
+
+@media (max-width:600px){
+  .collapsible-paragraph {
+    margin-top: 0px;
+  }
+  .gallery-column {
+    margin-bottom: 15px;
   }
 }
